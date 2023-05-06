@@ -1,5 +1,5 @@
 // propiedades Slider, que se vincularan al slider
-
+(function () {
 var propSlider = {
 
     slider: document.getElementById('slider'),
@@ -30,3 +30,5 @@ var metSlider = {
 }
 
 metSlider.inicio();
+
+} ())
