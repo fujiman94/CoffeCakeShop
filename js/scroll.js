@@ -1,4 +1,4 @@
-
+(function(){
 // Objeto con propiedades de efecto scroll
 var propScroll = {
 
@@ -80,3 +80,5 @@ var metScroll = {
 }
 
 metScroll.inicio();
+
+}())
