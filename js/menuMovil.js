@@ -18,6 +18,11 @@ var metMenu = {
 
         propMenu.burger_menu.addEventListener('click', metMenu.toggleMenu);
 
+        for ( var i = 0; propMenu.elem_menu.length; i++) {
+            propMenu.elem_menu[i].addEventListener('click', metMenu.ocultarMenu);
+
+        }
+
     },
 
     toggleMenu: function() {
@@ -31,6 +36,11 @@ var metMenu = {
             propMenu.menu_activo = false;
             propMenu.slideMenu.className = propMenu.slideMenu.className.replace('active', '');
         }
+    },
+
+    ocultarMenu: function() {
+        propMenu.menu_activo = false;
+            propMenu.slideMenu.className = propMenu.slideMenu.className.replace('active', '');
     }
 
 }
